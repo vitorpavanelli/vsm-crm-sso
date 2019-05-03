@@ -147,7 +147,6 @@ public class JWTAuthorizationFilter extends BasicAuthenticationFilter {
                     case "GET":
                         return true;
 
-
                 }
             }
         }
