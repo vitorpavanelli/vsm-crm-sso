@@ -1,0 +1,31 @@
+app:
+  name: crm-sso
+  dist: dev
+
+
+logging:
+  level:
+    br.com.vsm.crm.sso: error
+    org:
+      springframework.web: error
+      hibernate:
+        SQL: error
+
+server:
+  port: 8080
+
+dev:
+  datasource:
+    jdbc-url: jdbc:mysql://localhost:3306/vsm_crm_sso_test?allowPublicKeyRetrieval=true&useSSL=false&useTimezone=true&serverTimezone=UTC
+    username: vsm_crm
+    password: Vsm_Crm_Admin_1!
+
+prod:
+  datasource:
+    jdbc-url: jdbc:mysql://localhost:3306/vsm_crm_sso?allowPublicKeyRetrieval=true&useSSL=false&useTimezone=true&serverTimezone=UTC
+    username: vsm_crm
+    password: Vsm_Crm_Admin_1!
+
+spring:
+  jpa:
+    open-in-view: false
