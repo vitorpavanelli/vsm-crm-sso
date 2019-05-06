@@ -34,7 +34,7 @@ Request:
 }
 
 Incluir venda:
-http://localhost:8081/api/v1/crm/venda/incluir
+http://localhost:8081/api/crm/venda/incluir
 Request:
 {
 	"ocorrencia": "2019-05-05 13:54:00",
